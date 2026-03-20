@@ -2,3 +2,25 @@ Fri Mar 20 05:46:41 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 2d8f03a
+Fri Mar 20 06:03:18 PM UTC 2026: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:79:4: error: unknown type name ‘stack’; did you mean ‘Stack’?
+   79 |    stack* pila_aux=create_stack();
+      |    ^~~~~
+      |    Stack
+exercises.c:79:20: error: initialization of ‘int *’ from incompatible pointer type ‘Stack *’ {aka ‘List *’} [-Wincompatible-pointer-types]
+   79 |    stack* pila_aux=create_stack();
+      |                    ^~~~~~~~~~~~
+exercises.c:82:12: error: ‘aux’ undeclared (first use in this function)
+   82 |       push(aux, elemento);
+      |            ^~~
+exercises.c:82:12: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:79:11: error: unused variable ‘pila_aux’ [-Werror=unused-variable]
+   79 |    stack* pila_aux=create_stack();
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+a0ef2e4
