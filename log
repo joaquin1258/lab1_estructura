@@ -46,3 +46,18 @@ exercises.c:79:11: error: unused variable ‘pila_aux’ [-Werror=unused-variabl
       |           ^~~~~~~~
 cc1: all warnings being treated as errors
 b615400
+Fri Mar 20 06:06:15 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:82:12: error: ‘aux’ undeclared (first use in this function)
+   82 |       push(aux, elemento);
+      |            ^~~
+exercises.c:82:12: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:79:11: error: unused variable ‘pila_aux’ [-Werror=unused-variable]
+   79 |    Stack* pila_aux=create_stack();
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+0814395
