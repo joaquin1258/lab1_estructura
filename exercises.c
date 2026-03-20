@@ -52,7 +52,13 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+   int contador=0;
+   int* num=first(L);
+   while(num!=NULL){
+      contador+=*num;
+      num=next(L);
+   }
+   return contador;
 }
 
 /*
@@ -91,12 +97,6 @@ void copia_pila(Stack* P1, Stack* P2) {
       pop(pila_aux);
       elemento2=top(pila_aux);
    }
-   
-   
-
-
-
-
    
 }
 
