@@ -150,7 +150,7 @@ int parentesisBalanceados(char *cadena) {
          }
          
       }
-      *cadena++;
+      cadena++;
    }
    return 1;
 }
