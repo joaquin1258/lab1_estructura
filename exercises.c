@@ -47,7 +47,7 @@ List* crea_lista() {
    
    for (int i=0; i<10;i++){
       num[i]=i+1;
-      pushBack(L, num);
+      pushBack(L, &num);
       
    }
    return L;
