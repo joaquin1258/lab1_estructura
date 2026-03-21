@@ -272,3 +272,16 @@ exercises.c:140:44: error: comparison between pointer and integer [-Werror]
       |                                            ^~
 cc1: all warnings being treated as errors
 ed7aa7e
+Sat Mar 21 11:13:47 PM UTC 2026: 
+ exercises.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:27: error: expected ‘;’ before ‘push’
+  133 |          *cadena2=*cadena2
+      |                           ^
+      |                           ;
+  134 |          push(pila_aux, *cadena2);
+      |          ~~~~              
+509faa7
