@@ -89,11 +89,6 @@ void eliminaElementos(List*L, int elem){
    }
 
 
-
-
-
-   
-
 }
 
 /*
@@ -130,26 +125,33 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   /*Stack* pila_aux=create_stack();
+   Stack* pila_aux=create_stack();
+
+
+
+
+   
    while(*cadena!= '\0'){
       if (*cadena=='('||*cadena=='{'||*cadena=='['){
+         push(pila_aux, *cadena);
+      }
+      else{
+         if(pila_aux==NULL){
+            return 0;
+         } 
+         
+         if ((*cadena==')' && top(pila_aux)=='(')||
+            (*cadena=='}' && top(pila_aux)=='{')||
+            (*cadena==']' && top(pila_aux)=='[')){
+            pop(pila_aux);
+         }
+         else{
+            return 0;
+         }
          
       }
-
-
-
-
-      
-   }*/
-
-
-
-
-
-
-
-   
-   return 0;
-   
+      *cadena++;
+   }
+   return 1;
 }
 
