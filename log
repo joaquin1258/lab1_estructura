@@ -285,3 +285,16 @@ exercises.c:133:27: error: expected ‘;’ before ‘push’
   134 |          push(pila_aux, *cadena2);
       |          ~~~~              
 509faa7
+Sat Mar 21 11:14:55 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:26: error: expected ‘;’ before ‘push’
+  133 |          *cadena2=*cadena
+      |                          ^
+      |                          ;
+  134 |          push(pila_aux, *cadena2);
+      |          ~~~~             
+149d959
