@@ -152,6 +152,12 @@ int parentesisBalanceados(char *cadena) {
       }
       cadena++;
    }
-   return 1;
+   if (pila_aux==NULL){
+      return 1;
+   }
+   else{
+      return 0;
+   }
+   
 }
 
