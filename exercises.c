@@ -131,7 +131,7 @@ int parentesisBalanceados(char *cadena) {
       if (*cadena=='('||*cadena=='{'||*cadena=='['){
          char *cadena2=malloc(sizeof(char));
          *cadena2=*cadena;
-         push(pila_aux, *cadena2);
+         push(pila_aux, cadena2);
       }
       else{
          if(pila_aux==NULL){
